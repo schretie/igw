@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+    
+  </head>
+
+  <body>
+    <div id="app" style="width: 400px;background-color:#FFFFFF;margin-left:500px" >
+      
+      <md-toolbar class="md-primary">
+       <div class="md-toolbar-section-start">
+          <md-button class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+        </div>
+      <h3 class="md-title" style="flex: 2">My Cards</h3>
+      <md-button class="md-icon-button">
+        <md-icon>more_vert</md-icon>
+      </md-button>
+
+    </md-toolbar>
+
+      <div style="height: 600px;width: 400px;" class="md-layout  md-alignment-center-center" >
+        <md-list>
+           <md-content class="md-elevation-1" >
+          <md-list-item>
+            <div class="md-layout">
+              <div class="md-layout-item" style="margin: 15px;">
+                <img src="mastercard.jpg"/> 
+              </div>
+              <div class="md-layout-item" style="margin: 15px;">
+                <span class="md-caption">MASTERCARD BIO</span><br/>
+                <span>N° 5321 **** **** ****</span><br/>
+                <span>Lee M</span><br/>
+              <md-button class=" md-raised"  v-on:click="this.window.location='step2.html'">
+                Digital Cards
+              </md-button>
+              </div>
+              
+            </div>
+          </md-list-item>
+        </md-content>
+           <md-divider class="md-inset"></md-divider>
+          <br/>
+           <md-content class="md-elevation-1">
+          <md-list-item>
+            <div class="md-layout" >
+              <div class="md-layout-item" style="margin: 15px;">
+                <img src="visa.jpg"/> 
+              </div>
+              <div class="md-layout-item" style="margin: 15px;">
+                <span class="md-caption">VISA CLASSIC</span><br/>
+                <span>N° 4321 **** **** ****</span><br/>
+                <span>Lee M</span><br/>
+              <md-button class=" md-raised">
+                Digital Cards
+              </md-button>
+              </div>
+              
+            </div>
+          </md-list-item>
+
+          </md-content>
+        </md-list>
+          
+      </div>
+    
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      console.log(window.location);
+    </script>
+  </body>
+</html>

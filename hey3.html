@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/hey.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+  </head>
+
+  <body>
+    <div id="app" style="width: 400px;background-color:#FFFFFF;margin-left:500px;" >
+      
+      <md-toolbar class="md-primary">
+       <div class="md-toolbar-section-start">
+          <md-button class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+        </div>
+        <h3 class="md-title" style="flex: 2">Hey Taxi !</h3>
+        <md-button class="md-icon-button">
+          <md-icon>more_vert</md-icon>
+        </md-button>
+
+      </md-toolbar>
+
+        <div style="height: 600px;width: 400px;background-color:#f4d442;">
+          <br/>
+          <br/>
+          <span class="md-display-1">Your card has been added</b></span><br/>
+          <br/>
+          <br/>
+          <div style="height: 200px;width: 400px;" class="md-layout md-alignment-center-center" >
+            <!--div class="md-layout-item" style="margin: 15px;">
+                <img src="mastercard.jpg"/> 
+              </div-->
+              <img src="mastercard.jpg"/> 
+          </div>
+          
+          <div style="height: 150px" class="md-layout md-gutter md-alignment-bottom-center" >
+        
+          <md-button  class="md-raised md-secondary" v-on:click="this.window.location='step2added.html'">
+             <md-icon>arrow_back_ios</md-icon> Back to MyBank
+          </md-button>
+        </div>
+        </div>
+      
+    </div>
+
+    
+    <script src="app.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>

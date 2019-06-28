@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+  </head>
+
+  <body>
+    <div id="app" style="width: 400px;background-color:#FFFFFF;margin-left:500px;" >
+      
+      <md-toolbar class="md-primary">
+       <div class="md-toolbar-section-start">
+          <md-button class="md-icon-button">
+            <md-icon>menu</md-icon>
+          </md-button>
+        </div>
+        <h3 class="md-title" style="flex: 2">Add <img width="32" heigth="20" src="mastercard.jpg"/>  to Service</h3>
+        <md-button class="md-icon-button">
+          <md-icon>more_vert</md-icon>
+        </md-button>
+
+      </md-toolbar>
+        <div style="height: 600px;width: 400px;">
+          <md-list v-for="item in trs">
+            <div>
+          <md-list-item >
+            <img :src="item.icon" width="32px" heigth="32px" /> 
+             <span class="md-list-item-text">{{item.name}}</span>
+              
+
+             <md-button class="md-icon-button" v-on:click="this.window.location='hey.html'">
+            <md-icon>add</md-icon>
+              
+           </md-button>
+          </md-list-item>
+          <md-divider class="md-inset"></md-divider>
+
+        </div>
+        </md-list>
+        <div style="height: 300px" class="md-layout md-gutter md-alignment-bottom-center" >
+      
+        
+      </div>
+        </div>
+      
+    </div>
+
+    
+    <script src="app.js"></script>
+    <script>
+      
+    </script>
+  </body>
+</html>
